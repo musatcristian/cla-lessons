@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+    // add -S flag by hand
     // int size = 0;
     // scanf("%d", &size);
     // SNAP_VAR(size);
