@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "BuildProject",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-ggdb",
+                "main.c",
+                "-o",
+                "bin/myapp",
+                "-Iinclude",
+                "src/**/*.c",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
