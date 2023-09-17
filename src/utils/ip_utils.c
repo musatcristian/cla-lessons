@@ -18,7 +18,7 @@ int checkIP(char *address)
         {
             if (c == SEPARATOR)
             {
-                if (actualCount < 1) /* for cases like: "127.0..*/
+                if (actualCount < 1)
                 {
                     result = 0;
                     break;
@@ -31,7 +31,7 @@ int checkIP(char *address)
                 }
                 actualPart[actualCount] = NULL_CHAR;
                 int partValue = atoi(actualPart);
-                if (partValue > UPPER_BOUND || partValue < LOWER_BOUND) /*second condition is not needed*/
+                if (partValue > UPPER_BOUND || partValue < LOWER_BOUND)
                 {
                     result = 0;
                     break;
