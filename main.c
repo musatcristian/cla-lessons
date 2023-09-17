@@ -11,6 +11,8 @@
 
 int main(int argc, char *argv[])
 {
+    // dummy commit to test signing key
+
     // int size = 0;
     // scanf("%d", &size);
     // SNAP_VAR(size);
