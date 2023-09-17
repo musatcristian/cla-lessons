@@ -14,5 +14,6 @@
         "triangles.h": "c",
         "macro_log.h": "c",
         "arguments_utils.h": "c"
-    }
+    },
+    "git.enableCommitSigning": true
 }
