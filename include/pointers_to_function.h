@@ -1,0 +1,3 @@
+#ifndef POINTERS_TO_FUNCTION_H
+#define POINTERS_TO_FUNCTION_H
+#endif
