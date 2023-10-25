@@ -56,6 +56,6 @@ int main(int argc, char *argv[])
     // puts("");
 
     char x[20] = "123";
-    printf("%d\n\n\n\n\n", 10 - '8' + '0');
+    printf("%d\n\n\n\n\n", 10 - '8' + '1');
     return 0;
 }

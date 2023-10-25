@@ -1,36 +1,36 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/bin/myapp",
-            "args": [ ],
-            // "environment": [ { "name": "size", "value": "3" } ],
-            "preLaunchTask": "BuildProject",
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "externalConsole": true,
-            "MIMode": "lldb",
-            "MIDebuggerPath": "/usr/bin/lldb",
-            // "MIDebuggerPath": "/usr/local/bin/gdb",
-            "targetArchitecture": "x64",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for lldb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Enable input redirection",
-                    "text": "settings set target.input-path my_input.txt"
-                },
-                {
-                    "description": "Enable breakpoints",
-                    "text": "settings set target.inline-breakpoint-strategy always"
-                },
-            ],
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/myapp",
+      "args": [],
+      // "environment": [ { "name": "size", "value": "3" } ],
+      "preLaunchTask": "BuildProject",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      //   "MIDebuggerPath": "/usr/bin/gdb",
+      // "MIDebuggerPath": "/usr/local/bin/gdb",
+      "targetArchitecture": "x64"
+      //   "setupCommands": [
+      //     {
+      //       "description": "Enable pretty-printing for gdb",
+      //       "text": "-enable-pretty-printing",
+      //       "ignoreFailures": true
+      //     },
+      //     {
+      //       "description": "Enable input redirection",
+      //       "text": "settings set target.input-path my_input.txt"
+      //     },
+      //     {
+      //       "description": "Enable breakpoints",
+      //       "text": "settings set target.inline-breakpoint-strategy always"
+      //     }
+      //   ]
+    }
+  ]
 }
