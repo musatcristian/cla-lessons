@@ -10,27 +10,28 @@
       // "environment": [ { "name": "size", "value": "3" } ],
       "preLaunchTask": "BuildProject",
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      // "cwd": "${workspaceFolder}",
+      "cwd": "${fileDirname}",
       "externalConsole": false,
       "MIMode": "gdb",
       //   "MIDebuggerPath": "/usr/bin/gdb",
       // "MIDebuggerPath": "/usr/local/bin/gdb",
-      "targetArchitecture": "x64"
-      //   "setupCommands": [
-      //     {
-      //       "description": "Enable pretty-printing for gdb",
-      //       "text": "-enable-pretty-printing",
-      //       "ignoreFailures": true
-      //     },
-      //     {
-      //       "description": "Enable input redirection",
-      //       "text": "settings set target.input-path my_input.txt"
-      //     },
-      //     {
-      //       "description": "Enable breakpoints",
-      //       "text": "settings set target.inline-breakpoint-strategy always"
-      //     }
-      //   ]
+      "targetArchitecture": "x64",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+        // {
+        //   "description": "Enable input redirection",
+        //   "text": "settings set target.input-path my_input.txt"
+        // },
+        // {
+        //   "description": "Enable breakpoints",
+        //   "text": "settings set target.inline-breakpoint-strategy always"
+        // }
+      ]
     }
   ]
 }

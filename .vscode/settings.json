@@ -41,6 +41,8 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "files.associations": {
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stdio.h": "c",
+    "arguments_utils.h": "c"
   }
 }
