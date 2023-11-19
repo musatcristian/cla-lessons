@@ -3,18 +3,25 @@
 #include <string.h>
 #include <errno.h>
 #include "my_header.h"
+#include "structs.h"
 
 int main(int argc, char *argv[])
 {
-    char input[6];
-    char dest[10] = "UGUG";
+    struct Person mary, james, pat, john;
 
-    puts("Enter a five letter word");
-    scanf("%5s", input);
+    strcpy(mary.fname, "Mary");
+    strcpy(mary.lname, "Smith");
+    strcpy(james.fname, "James");
+    strcpy(james.lname, "Johnson");
+    strcpy(pat.fname, "Patricia");
+    strcpy(pat.lname, "Williams");
+    strcpy(john.fname, "John");
+    strcpy(john.lname, "Brown");
 
-    mystrcat(dest, input);
-
-    printf("Whole string is :\n %s\n", dest);
+    print_struct(mary);
+    print_struct(pat);
+    print_struct(james);
+    print_struct(john);
 
     return 0;
 }

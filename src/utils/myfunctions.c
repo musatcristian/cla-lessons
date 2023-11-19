@@ -44,10 +44,15 @@ void printArgvs(char **argv)
     }
 }
 
-extern void mystrcat(char *destination, char *source)
+extern void mystrcat(char *destination, char *source, int destination_size)
 {
 
-    for (destination += 3; *destination++ = *source++;)
+    for (destination += destination_size; *destination++ = *source++;)
         ;
     return destination;
 }
+
+extern void print_struct(struct Person pers)
+{
+    printf("The full name is : %s %s\n", pers.fname, pers.lname);
+};
