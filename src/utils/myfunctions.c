@@ -43,3 +43,11 @@ void printArgvs(char **argv)
         printf("\t%s\n", argv[i]);
     }
 }
+
+extern void mystrcat(char *destination, char *source)
+{
+
+    for (destination += 3; *destination++ = *source++;)
+        ;
+    return destination;
+}

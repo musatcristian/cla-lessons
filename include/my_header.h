@@ -4,4 +4,6 @@
 // Function declaration (prototype)
 int printMessage(const char *message, int argc);
 
+void mystrcat(char *destination, char *source);
+
 #endif
