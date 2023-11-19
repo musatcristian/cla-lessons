@@ -55,4 +55,13 @@ extern void mystrcat(char *destination, char *source, int destination_size)
 extern void print_struct(struct Person pers)
 {
     printf("The full name is : %s %s\n", pers.fname, pers.lname);
-};
+}
+
+extern void print_n_values(int n, struct Element *list)
+{
+    printf("First %d values\n", n);
+    for (int i = 0; i < n; i++)
+    {
+        printf("\t%d\n", list[i].value);
+    }
+}

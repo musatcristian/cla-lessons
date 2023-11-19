@@ -13,4 +13,10 @@ struct House
     struct House *previous;
     struct House *next;
 };
+
+struct Element
+{
+    int value;
+    struct Element *next;
+};
 #endif

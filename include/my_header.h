@@ -10,4 +10,6 @@ void mystrcat(char *destination, char *source, int destination_size);
 
 void print_struct(struct Person pers);
 
+void print_n_values(int n, struct Element *list);
+
 #endif
