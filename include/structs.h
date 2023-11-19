@@ -5,6 +5,12 @@ struct Person
 {
     char fname[50];
     char lname[50];
-    /* data */
+};
+
+struct House
+{
+    int houseNumber;
+    struct House *previous;
+    struct House *next;
 };
 #endif
