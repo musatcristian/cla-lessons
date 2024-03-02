@@ -49,7 +49,7 @@ extern void mystrcat(char *destination, char *source, int destination_size)
 
     for (destination += destination_size; *destination++ = *source++;)
         ;
-    return destination;
+    // return destination;
 }
 
 extern void print_struct(struct Person pers)
@@ -57,11 +57,31 @@ extern void print_struct(struct Person pers)
     printf("The full name is : %s %s\n", pers.fname, pers.lname);
 }
 
-extern void print_n_values(int n, struct Element *list)
+extern void print_n_values(int n, struct Element *itemPtr)
 {
-    printf("First %d values\n", n);
-    for (int i = 0; i < n; i++)
+    struct Element *nextPtr = itemPtr;
+    int counter = 0;
+
+    printf("\tFirst %d values\n", n);
+    while (counter < n && nextPtr->next)
     {
-        printf("\t%d\n", list[i].value);
-    }
+        printf("\t Value is: %d \n", nextPtr->value);
+        nextPtr = nextPtr->next;
+        counter++;
+    };
+}
+
+void free_list(struct Element *ptrEl)
+{
+    struct Element *nextPtr = NULL;
+    struct Element *f = ptrEl;
+    while (f)
+    {
+        printf("\t Prt is: %p \n", f->next);
+        nextPtr = f->next;
+        free(f);
+        f = nextPtr;
+    };
+
+    printf("f este %p\n", f);
 }

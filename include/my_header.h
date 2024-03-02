@@ -12,4 +12,6 @@ void print_struct(struct Person pers);
 
 void print_n_values(int n, struct Element *list);
 
+void free_list(struct Element *list);
+
 #endif
