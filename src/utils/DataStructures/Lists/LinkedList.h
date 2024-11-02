@@ -2,7 +2,7 @@
 #define LinkedList_h
 
 #include <stdlib.h>
-#include "Node.h"
+#include "../Common/Node.h"
 
 struct LinkedList_int
 {

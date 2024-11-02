@@ -9,13 +9,15 @@
   "git.enableCommitSigning": true,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
+  "eslint.runtime": "node",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "window.zoomLevel": 1,
-  "editor.fontSize": 12,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "window.zoomLevel": 0.7,
+  "editor.fontSize": 10,
+  "terminal.integrated.fontSize": 12,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -26,7 +28,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[graphql]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,5 +42,11 @@
   },
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

@@ -12,7 +12,7 @@
       }
     },
     {
-      "label": "C/C++: gcc build active file",
+      "label": "Build active file",
       "type": "cppbuild",
       "command": "gcc",
       "args": [
